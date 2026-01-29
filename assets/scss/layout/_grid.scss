@@ -1,1 +1,8 @@
 @use '../abstracts' as abs;
+
+.container {
+    max-width: abs.$container-width; // Dùng biến độ rộng
+    margin: 0 auto; // Căn giữa màn hình
+    padding: 0 15px; // Khoảng đệm 2 bên mép mobile
+    width: 100%;
+}

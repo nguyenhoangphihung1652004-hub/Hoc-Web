@@ -1,1 +1,9 @@
 @use '../abstracts' as abs;
+
+.site-main {
+    flex: 1; // Đẩy footer xuống đáy (kết hợp với .app flex ở reset)
+    padding: 40px 0;
+    
+    // Giả lập nội dung để bạn dễ nhìn thấy
+    background-color: #f4f4f4;
+}

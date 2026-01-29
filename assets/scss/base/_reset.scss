@@ -1,5 +1,20 @@
+@use '../abstracts' as abs; // Gọi biến (nếu cần font-family)
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: abs.$text-color;
+    line-height: 1.6;
+}
+
+// Giúp footer luôn nằm dưới đáy kể cả khi nội dung ngắn
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
