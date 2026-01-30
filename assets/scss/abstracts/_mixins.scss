@@ -1,12 +1,17 @@
-// Công cụ căn giữa nhanh
-@mixin flex-center-between {
-    display: flex;
-    justify-content: space-between; // Dàn đều 2 bên
-    align-items: center;
-}
-
 @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin mobile {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobilels {
+    @media (max-width: 480px) {
+        @content;
+    }
 }

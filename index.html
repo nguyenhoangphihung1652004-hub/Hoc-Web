@@ -6,42 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="assets/js/main.js" defer></script>
-    <title>Học Web - SCSS Modern Structure</title>
+    <title>Layout</title>
 </head>
 
 <body>
     <div class="app">
-        
         <header class="site-header">
-            <div class="container">
-                <a href="#" class="logo">HOC-WEB</a>
-                
+            <div class="container site-header__inner">
+                <img src="assets/img/logo.png" alt="logo-header">
                 <nav class="main-nav">
-                    <ul>
-                        <li><a href="#">Trang chủ</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
-                        <li><a href="#">Liên hệ</a></li>
+                    <ul class="main-nav__list">
+                        <li><a href="#" class="main-nav__link">Home</a></li>
+                        <li><a href="#" class="main-nav__link">Product</a></li>
+                        <li><a href="#" class="main-nav__link">About</a></li>
+                        <li><a href="#" class="main-nav__link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <main class="site-main">
-            <div class="container">
-                <section class="hero">
-                    <h1>Xin chào Sass hiện đại!</h1>
-                    <p>Đây là website sử dụng cấu trúc @use và @forward.</p>
-                    <a href="#" class="btn">Tìm hiểu thêm</a>
-                </section>
-            </div>
+            <section>
+                <article class="hero-banner">
+                    <div class="hero-banner__inner">
+                        <p>Website modern - about layout</p>
+                        <button class="btn btn--primary">View more</button>
+                    </div>
+                </article>
+            </section>
+
+            <section class="container section-main">
+                <h1 class="section-main__title">Products</h1>
+                <div class="card">
+                    <article class="product-card">
+                        <div class="product-card__sale">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QaRqKWxfrGdQ9r5U5mWg-RWItNxzmphX-Q&s"
+                                alt="product-img" class="product-card__img">
+                            <span class="product-card__badge">Sale</span>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Product</h3>
+                            <p><s>12.000.000</s></p>
+                            <p>9.900.000</p>
+                            <button class="btn btn--secondary">Buy</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__sale">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QaRqKWxfrGdQ9r5U5mWg-RWItNxzmphX-Q&s"
+                                alt="product-img" class="product-card__img">
+                            <span class="product-card__badge">Sale</span>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Product</h3>
+                            <p><s>12.000.000</s></p>
+                            <p>9.900.000</p>
+                            <button class="btn btn--secondary">Buy</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__sale">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QaRqKWxfrGdQ9r5U5mWg-RWItNxzmphX-Q&s"
+                                alt="product-img" class="product-card__img">
+                            <span class="product-card__badge">Sale</span>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Product</h3>
+                            <p><s>12.000.000</s></p>
+                            <p>9.900.000</p>
+                            <button class="btn btn--secondary">Buy</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__sale">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QaRqKWxfrGdQ9r5U5mWg-RWItNxzmphX-Q&s"
+                                alt="product-img" class="product-card__img">
+                            <span class="product-card__badge">Sale</span>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Product</h3>
+                            <p><s>12.000.000</s></p>
+                            <p>9.900.000</p>
+                            <button class="btn btn--secondary">Buy</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </main>
 
         <footer class="site-footer">
-            <div class="container">
-                <p>&copy; 2024 Hoc-Web. All rights reserved.</p>
+            <div class="container site-footer__inner">
+                <p>Copyright: This website belong as me</p>
             </div>
         </footer>
-
     </div>
 </body>
 

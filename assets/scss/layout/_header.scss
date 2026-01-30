@@ -1,36 +1,38 @@
-// assets/scss/layout/_header.scss
-@use '../abstracts' as abs;
+@use '../abstracts' as *;
 
 .site-header {
-    background-color: abs.$primary-color;
-    padding: 1rem 0;
-    color: abs.$white;
+    padding: 20px;
+    background-color: $primary-color;
 
-    .container {
-        // Mixin này giúp Logo sang trái, Menu sang phải
-        @include abs.flex-center-between; 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobilels {
+            flex-direction: column;
+        }
     }
+}
 
-    .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: abs.$white;
-        text-decoration: none;
-    }
+.main-nav {
 
-    .main-nav ul {
-        display: flex; // Dàn ngang các món trong menu
-        gap: 20px;     // Khoảng cách giữa các món
+    &__list {
         list-style: none;
+        @include flex-center;
+        gap: 20px;
 
-        a {
-            color: abs.$white; // Dùng biến màu trắng
-            text-decoration: none;
-            opacity: 0.8;
-            
-            &:hover {
-                opacity: 1;
-            }
+        @include mobilels {
+            flex-direction: column;
+        }
+    }
+
+    &__link {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-color;
         }
     }
 }

@@ -1,12 +1,11 @@
-@use '../abstracts' as abs;
+@use '../abstracts' as *;
 
 .site-footer {
-    background-color: abs.$footer-bg;
-    color: abs.$white;
-    padding: 20px 0;
-    margin-top: auto;
+    padding: 20px;
+    background-color: $primary-color;
+    color: $secondary-color;
 
-    .container {
-        @include abs.flex-center; // Căn giữa nội dung footer
+    &__inner {
+        @include flex-center;
     }
 }

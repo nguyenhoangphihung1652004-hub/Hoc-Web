@@ -1,0 +1,9 @@
+@use '../abstracts' as abs;
+
+.section-main {
+
+    &__title {
+        text-align: center;
+        margin: 20px 0;
+    }
+}

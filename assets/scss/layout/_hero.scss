@@ -1,9 +1,16 @@
-@use '../abstracts' as abs;
+@use '../abstracts' as *;
 
-.site-main {
-    flex: 1; // Đẩy footer xuống đáy (kết hợp với .app flex ở reset)
-    padding: 40px 0;
-    
-    // Giả lập nội dung để bạn dễ nhìn thấy
-    background-color: #f4f4f4;
+.hero-banner {
+    background: url("https://img.timviecthietke.com/2021/06/kich-thuoc-banner-website-1.png") center/cover no-repeat;
+    height: 50vh;
+    color: $secondary-color;
+    @include flex-center;
+
+    &__inner {
+        @include flex-center;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.6);
+        padding: 30px;
+        border-radius: 12px;
+    }
 }

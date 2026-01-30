@@ -1,1 +1,19 @@
-@use '../abstracts' as abs;
+@use '../abstracts' as *;
+
+.btn {
+    
+    &--primary {
+        padding: 5px 15px;
+        border-radius: 4px;
+    }
+
+    &--secondary {
+        padding: 5px 10px;
+        border-radius: 4px;
+    }
+
+    &:hover {
+        background-color: $primary-color;
+        color: $secondary-color
+    }
+}
